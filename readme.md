@@ -1,9 +1,7 @@
 GitHub User Growth
 ======
 
-It looks exponential with a decreasing exponent;
-think of it as compounded interest on number of users
-with a linearly decreasing interest rate.
+We have [counts of GitHub users over time](https://api.scraperwiki.com/api/1.0/datastore/sqlite?format=csv&name=github_users_each_year&query=select+*+from+`swdata`&apikey=). Let's predict how this number changes.
 
 Call new_users/(total_users - new_users) the interest_rate,
 and skip the first 18 months as this growth rate doesn't fit them.
@@ -42,3 +40,7 @@ where
     A = Number of users in the end month
     t = Number of months between the starting and end month (This is 1 for February to March.)
     r = 14.67% - 0.15% * (Number of months since December 2007)
+
+So the growth looks exponential with a decreasing exponent;
+think of it as compounded interest on number of users with
+a linearly decreasing interest rate.
