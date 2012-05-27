@@ -41,6 +41,9 @@ where
     A(t+1) = Number of users in the next month
     r(t)   = 14.67% - 0.15% * (Current number of months since December 2007)
 
+And you can fix that so it chains months together and
+averages them and whatnot.
+
 So the growth looks exponential with a decreasing exponent;
 think of it as compounded interest on number of users with
 a linearly decreasing interest rate.
