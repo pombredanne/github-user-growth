@@ -33,14 +33,13 @@ I tried converting to a continuous interest formula, (That's what's in
 my notebook.) but I didn't get very far. So I did monthly compounding;
 Here's an estimate of the number of GitHub-users over time
 
-    A = P*(1+r)^t
+    A(t+1) = A(t) * [ 1 + r(t) ]
 
 where
 
-    P = Number of users in the starting month (This must come from a month after June 2009.)
-    A = Number of users in the end month
-    t = Number of months between the starting and end month (This is 1 for February to March.)
-    r = 14.67% - 0.15% * (Number of months since December 2007)
+    A(t)   = Number of users in the current month (This must come from a month after June 2009.)
+    A(t+1) = Number of users in the next month
+    r(t)   = 14.67% - 0.15% * (Current number of months since December 2007)
 
 So the growth looks exponential with a decreasing exponent;
 think of it as compounded interest on number of users with
