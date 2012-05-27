@@ -25,8 +25,9 @@ Here's interest rate over time:
 	F-statistic: 52.21 on 1 and 32 DF,  p-value: 3.303e-08 
 
 Note the that the interest rate decreases by about 0.15% every month.
-The plots makes that relationship look very strong and also like assumptions
-approximate linearity, homoskedasticity (unvarying variance), &c. are valid.
+The plots (github-growth[1-4].pdf) make that relationship look very
+strong and makes the assumptions approximate linearity, homoskedasticity
+(unvarying variance), &c. seem valid.
 
 I tried converting to a continuous interest formula, (That's what's in
 my notebook.) but I didn't get very far. So I did monthly compounding;
