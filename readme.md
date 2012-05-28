@@ -8,10 +8,9 @@ and skip the first 18 months as this growth rate doesn't fit them.
 Here's interest rate over time:
 
 	lm(formula = interest_rate ~ when_int, data = g[-1:-18, ])
-
-	Residuals:
-	      Min        1Q    Median        3Q       Max 
-	-0.043111 -0.004783  0.000957  0.006122  0.027432 
+        # when_int is the number of months after December 2007.
+        # interest_rate is really last month's interest rate;
+        # it's new_users/(total_users - new_users).
 
 	Coefficients:
 		      Estimate Std. Error t value Pr(>|t|)    
